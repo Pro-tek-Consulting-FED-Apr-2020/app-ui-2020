@@ -1,6 +1,9 @@
+@import './searchBoxStyles.scss';
+
 body {
   background-color: lightblue;
   font-family: sans-serif;
+  margin: 0;
 }
 
 section {
@@ -9,8 +12,8 @@ section {
   margin: 1px;
 }
 
-div {
-  border: 1px solid;
-  padding: 10px;
-  margin: 3px;
-}
+// div {
+//   border: 1px solid;
+//   padding: 10px;
+//   margin: 3px;
+// }

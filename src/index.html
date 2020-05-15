@@ -10,6 +10,10 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
+  <!-- Svetlana components -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,700" media="all">
+  <script src="./components/SearchBox.js" type="text/babel"></script>
+  <script src="./components/HotelsSearchForm.js" type="text/babel"></script>
 </head>
 
 <body>
@@ -45,6 +49,7 @@
       <div id="searchForm"></div>
       <div id="searchNav"></div>
     </section>
+
     <section id="section1">
       <div id="left"></div>
       <div id="right"></div>
@@ -53,6 +58,11 @@
 
   </main>
   <footer></footer>
+
+
+  <script type="text/babel">
+    ReactDOM.render(<SearchBox/>, document.getElementById('searchBox'));
+  </script>
 </body>
 
 </html>
