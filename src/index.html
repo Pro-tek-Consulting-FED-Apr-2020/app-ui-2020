@@ -1,37 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Priceline</title>
+    <meta name="description" content="Movies Resource" />
+    <meta name="viewport" content="width=device-width, initial-sclae=1" />
+    <!--------css---------->
+    <link href="./stylesheets/styles.css" rel="stylesheet" />
+    <link href="./stylesheets/responsive.css" rel="stylesheet" />
+    <!--------font css----->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/font-awesome.css" />
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Priceline</title>
-  <meta name="description" content="Movies Resource" />
-
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-</head>
-
-<body>
-  <header>
-    <div id="alert"></div>
-    <div id="navbar">
-      <nav>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-        </ul>
-      </nav>
-      <div>
-        <button></button>
-        <button></button>
-        <button></button>
+  <body>
+    <header>
+      <!----------Alert------------>
+      <div id="alert">
+        <div class="sale1 float-left"><a href="#">TRAVEL SUPPORT</a></div>
+        <div class="sale2 float-left">
+          <a href="#"
+            >Click here to learn more about how Coronavirus may affect your
+            travel plans</a
+          >
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <!--     
+      <!--------Left Navigation-------->
+      <div id="navbar">
+        <div class="logo float-left"><img src="images/logo.jpg" alt="" /></div>
+        <nav class="navi-left" id="myTopnav">
+          <ul>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Bundle + Save</a></li>
+            <li><a href="#">Cruises</a></li>
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!----------right navigation------>
+        <div class="navi-right float-right">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa fa-user-circle"></i><span>Sign in</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-briefcase"></i><span>My Trip</span>
+                <i class="fa fa-caret-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-question-circle"></i><span>Help</span>
+                <i class="fa fa-caret-down"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--     
     <div id="reactContainer" class="id-container" role="main"></div>
     <div id="root" role="note"></div>
     <script type="text/babel">
@@ -41,18 +89,28 @@
       );
       ReactDOM.render(<button onClick={() => this.setState({ liked: true })}>Like</button>,document.getElementById('reactContainer'));
     </script> -->
-    <section id="searchBox">
-      <div id="searchForm"></div>
-      <div id="searchNav"></div>
-    </section>
-    <section id="section1">
-      <div id="left"></div>
-      <div id="right"></div>
-    </section>
-    <section id="section2"></section>
+      <section id="searchBox">
+        <div id="searchNav"></div>
+        <div id="searchForm"></div>
+      </section>
+      <section id="section1">
+        <div id="left"></div>
+        <div id="right"></div>
+      </section>
+      <section id="section2"></section>
+    </main>
+    <footer></footer>
 
-  </main>
-  <footer></footer>
-</body>
-
+    <!---------Navigation toggle script-------->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navi-left") {
+          x.className += " responsive";
+        } else {
+          x.className = "navi-left";
+        }
+      }
+    </script>
+  </body>
 </html>
