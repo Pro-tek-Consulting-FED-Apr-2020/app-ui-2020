@@ -4,14 +4,54 @@
 <head>
   <meta charset="utf-8">
   <title>Priceline</title>
-  <meta name="description" content="Movies Resource" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
 </head>
-
+<style>        
+  .or-seperator {
+      margin: 50px 0 15px;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+  }
+  .or-seperator p1 {
+      padding: 0 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 40px;
+      background: #fff;
+      position: relative;
+      top: -22px;
+      z-index: 1;
+  }
+  .no-border{
+    border:none;
+  }
+    .default {
+    border-color: #e7e7e7;
+    color: black;
+  }
+  
+  .default:hover {
+    background: #e7e7e7;
+  }
+  .form-styles{
+    padding-left: 45px;
+    padding-right: 45px;
+    border-left-width: 0px;
+    margin-left: 0px;
+  }
+  </style>
 <body>
   <header>
     <div id="alert"></div>
@@ -23,10 +63,117 @@
           <li>Link 3</li>
         </ul>
       </nav>
-      <div>
+      <button type="button"  data-toggle="modal" data-target="#myModal">Sign-In</button>
+      <button></button>
         <button></button>
-        <button></button>
-        <button></button>
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header no-border">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3>Sign in</h3>
+        </div>
+          
+        <div class="modal-body">
+            <div class="signup-form">
+              <form class="form-styles">
+
+                <div>
+                  <button class="btn default btn-block ">Sign in with Google</button>
+                  <button class="btn default btn-block ">Sign in with Facebook</button>
+                </div>
+
+                <div class="or-seperator"><p1>or sign in with email</p1></div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Email Address:" required="required">
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password" required="required">
+                  <a href="#">Forgot Password?</a>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success btn-block z-depth-1">Log in</button>
+                </div>
+
+                <div class="clearfix">
+                  <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>  
+                </div> <br/>
+
+                <div class="form-group"><p class="text-center">Don't have an account?<a data-toggle="modal" data-target="#myModal1">Create an Account</a></p>
+                
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header no-border">
+         
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3>Create your account</h3>
+          <p style="font-size: 12px">Set up an account today and start receiving exclusive deals and discounts reserved only for <strong>you!</strong></p>
+        </div>
+          
+        <div class="modal-body">
+            <div class="signup-form">
+                <form class="form-styles">
+                   
+                    <div>
+                        <button class="btn default btn-block "><img src="https://cdn.worldvectorlogo.com/logos/google-icon.svg" style ="width: .05px; height: .05px;">Sign in with Google</button>
+                        <button class="btn default btn-block ">Sign in with Facebook</button>
+                        
+                    
+                    </div>
+            <div class="or-seperator"><p1>or register with email</p1></div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="First Name" required="required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Last Name" required="required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email Address" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block z-depth-1">Create Account</button>
+            </div>
+        <br/>
+            <div class="form-group"><p class="text-center">Already have an account?<a data-toggle="modal" data-target="#myModal">Sign in</a></p></div>
+        </form>
+        
+    </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+        
       </div>
     </div>
   </header>
@@ -53,6 +200,18 @@
 
   </main>
   <footer></footer>
+  <script>
+    let closeBtn = document.querySelector(".close-btn")
+    closeBtn.onclick = function(){
+      modal.style.display = "none"
+    }
+    window.onclick = function(e){
+      if(e.target == modal){
+        modal.style.display = "none"
+      }
+    }
+  
+  </script>
 </body>
 
 </html>
