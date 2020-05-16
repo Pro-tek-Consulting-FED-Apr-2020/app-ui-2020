@@ -1,0 +1,108 @@
+body {
+  background-color: lightblue;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------Global classes -----------*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/*----------- Alert -------------------*/
+
+#alert {
+  width: 100%;
+  height: 48px;
+  background: #efac1f;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+#alert a {
+  color: #fff;
+}
+
+.sale1 {
+  border-right: 1px solid #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.sale2 {
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+/*---------------Left Navigation bar-------------*/
+
+#navbar {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.navi-left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navi-left ul li {
+  float: left;
+}
+
+.navi-left ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #556b7f;
+  padding: 7px 20px;
+  font-weight: 100;
+}
+
+.navi-left ul li a.icon {
+  display: none;
+}
+
+/*----------------Right navigation bar---------------------*/
+
+.navi-right ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navi-right ul li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  padding: 7px 20px;
+  color: #007AFF;
+  font-weight: 100;
+}
+
+.navi-right ul li a i {
+  padding: 0 10px;
+}

@@ -1,0 +1,94 @@
+@media only screen and (max-width:1100px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:1023px) {
+    .navi-right ul li a span {
+        display: none;
+    }
+    .navi-right ul li a i {
+        padding: 0 0 0 5px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .sale1, .sale2 {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .navi-right ul li:not(:first-child) {
+        display: none;
+    }
+    .navi-right ul li a span {
+        display: inline-block;
+    }
+    .navi-right ul li a i {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .navi-left ul li a, li a {
+        padding: 7px 15px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .sale2 {
+        display: block;
+        width: 70%;
+        text-align: center;
+        line-height: 15px;
+    }
+    .navi-right {
+        display: none;
+    }
+    .navi-left.responsive {
+        position: relative;
+        background: #fff;
+        padding-top: 8%;
+    }
+    .navi-left ul li {
+        float: none;
+    }
+    .navi-left ul li a {
+        display: none;
+    }
+    .navi-left ul li a.icon {
+        float: right;
+        display: block;
+    }
+    .navi-left.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navi-left.responsive ul li a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px 20px;
+    }
+    .navi-left.responsive ul li a:hover {
+        background: #eee;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .sale1 {
+        border: none;
+        text-align: center;
+        float: none;
+    }
+    .sale2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #navbar {
+        padding: 15px 10px;
+    }
+}
