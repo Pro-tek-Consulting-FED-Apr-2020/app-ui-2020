@@ -1,29 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Priceline</title>
-    <meta name="description" content="Movies Resource" />
-    <meta name="viewport" content="width=device-width, initial-sclae=1" />
-    <!--------css---------->
-    <link href="./stylesheets/styles.css" rel="stylesheet" />
-    <link href="./stylesheets/responsive.css" rel="stylesheet" />
-    <!--------font css----->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./stylesheets/font-awesome.css" />
-    <script
-      src="https://unpkg.com/react@16/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  </head>
 
 <head>
   <meta charset="utf-8" />
@@ -110,28 +86,22 @@
         <div class="navi-right float-right">
           <ul>
             <li>
-              <a href="#"
-                ><i class="fa fa-user-circle"></i><span>Sign in</span></a
-              >
+              <a href="#"><i class="fa fa-user-circle"></i><span>Sign in</span></a>
             </li>
             <li>
-              <a href="#"
-                ><i class="fa fa-briefcase"></i><span>My Trip</span>
-                <i class="fa fa-caret-down"></i
-              ></a>
+              <a href="#"><i class="fa fa-briefcase"></i><span>My Trip</span>
+                <i class="fa fa-caret-down"></i></a>
             </li>
             <li>
-              <a href="#"
-                ><i class="fa fa-question-circle"></i><span>Help</span>
-                <i class="fa fa-caret-down"></i
-              ></a>
+              <a href="#"><i class="fa fa-question-circle"></i><span>Help</span>
+                <i class="fa fa-caret-down"></i></a>
             </li>
           </ul>
         </div>
       </div>
-    </header>
-    <main>
-      <!--     
+  </header>
+  <main>
+    <!--     
     <div id="reactContainer" class="id-container" role="main"></div>
     <div id="root" role="note"></div>
     <script type="text/babel">
@@ -159,31 +129,17 @@
   <script type="text/babel">
     ReactDOM.render(<SearchBox/>, document.getElementById('searchBox'));
   </script>
-</body>
-
-<!---------Navigation toggle script-------->
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "navi-left") {
-      x.className += " responsive";
-    } else {
-      x.className = "navi-left";
-    }
-  }
-</script>
-</body>
-
-    <!---------Navigation toggle script-------->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "navi-left") {
-          x.className += " responsive";
-        } else {
-          x.className = "navi-left";
-        }
+  <!---------Navigation toggle script-------->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navi-left") {
+        x.className += " responsive";
+      } else {
+        x.className = "navi-left";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
