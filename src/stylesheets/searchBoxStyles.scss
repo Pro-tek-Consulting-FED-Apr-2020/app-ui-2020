@@ -1,0 +1,347 @@
+.mainContent {
+  background-image: url(https://www.priceline.com/home/public/assets/images/photos/pcln-hp-hero-mountain-lounge.jpg);
+  padding-bottom: 40px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.horizontalLine1 {
+  color: lightgray;
+}
+
+.horizontalLine2 {
+  color: lightgray;
+}
+
+.searchBox {
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 850px;
+  margin-left: 15%;
+}
+
+#searchBox {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.top-color {
+  background-color: rgb(244, 246, 248);
+}
+
+.searchBox-header1 {
+  color: #001833;
+  font-size: 24px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.searchBox-header2 {
+  font-size: 20px;
+  color: #001833;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.searchBox-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.searchBox-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(79, 111, 142);
+
+  .searchBox-tab:hover {
+    color: rgb(0, 122, 255);
+  }
+
+  .selected {
+    color: rgb(0, 122, 255);
+    position: relative;
+    padding: 0 20px;
+
+    &::after {
+      position: absolute;
+      top: 45px;
+      width: 100%;
+      display: block;
+      content: "";
+      background: #007aff;
+      height: 4px;
+      left: 0;
+    }
+  }
+}
+
+.hidden-where {
+  position: absolute;
+  height: 20px;
+  transition-property: opacity;
+  transition-duration: 0.1s;
+  opacity: 0;
+  pointer-events: none;
+  width: calc(100% - 40px);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 43px;
+  color: rgb(79, 111, 143);
+}
+
+.location-icon {
+  height: 66px;
+  padding-bottom: 8px;
+  transition-property: padding-top, padding-bottom;
+  transition-duration: 0.1s;
+  position: absolute;
+  left: 0;
+  margin-left: 8px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: rgb(0, 122, 255);
+}
+
+.location-icon:not(:root) {
+  overflow: hidden;
+}
+
+.input-location input {
+  width: 100%;
+  height: 58px;
+  background: white;
+  padding-left: 39px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.input-location {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+}
+
+.date-range-icon {
+  position: absolute;
+  left: 10px;
+  top: 19px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  align-self: center;
+  pointer-events: none;
+  color: rgb(0, 122, 255);
+}
+
+.input-date-range {
+  position: relative;
+  padding: 0;
+  height: 58px;
+  transition-property: padding-top, padding-bottom;
+  transition-duration: 0.1s;
+  background-color: white;
+  border: 1px solid rgb(192, 192, 192);
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.input-date-range-label {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  padding-left: 44px;
+  color: rgb(79, 111, 143);
+}
+
+.input-date-range input {
+  height: 56px;
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding-top: 9px;
+  margin: 0;
+  border: 0;
+}
+
+.dates1 {
+  padding-left: 36px;
+}
+
+.dates2 {
+  padding-left: 0;
+}
+
+.input-nr-people {
+  position: relative;
+  height: 58px;
+  transition-property: padding-top, padding-bottom;
+  transition-duration: 0.1s;
+  background-color: white;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.nr-people-icon {
+  position: relative;
+  flex: 0 0 auto;
+  align-self: center;
+  pointer-events: none;
+  margin-left: 8px;
+  margin-right: -32px;
+  color: rgb(0, 122, 255);
+  top: 5px;
+}
+
+.input-nr-people input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  height: 61px;
+  padding-left: 36px;
+}
+
+.submitButton {
+  height: 61px;
+  background-color: rgb(0, 122, 255);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 30px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.arrowdown-img {
+  position: absolute;
+  right: 5px;
+  top: 23px;
+}
+
+.bundle-save {
+  display: inline-block;
+  color: rgb(79, 111, 143);
+}
+
+.checkbox {
+  width: auto;
+  margin-right: 0.3em;
+  cursor: pointer;
+  padding: 0.5em 0.65em 0.6em;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease-out;
+  color: rgb(0, 122, 255);
+  opacity: 0;
+
+  &:hover {
+    color: rgb(0, 122, 255);
+  }
+}
+
+.checkbox-label {
+  letter-spacing: 0.2px;
+  width: 100%;
+  color: rgb(79, 111, 143);
+  font-size: 12px;
+  white-space: nowrap;
+  margin: 0;
+  font-weight: bold;
+}
+
+.checkbox1 {
+  color: #007aff;
+}
+
+.checkbox2 {
+  color: #007aff;
+}
+
+.select-options {
+  border-radius: 0;
+  background: white;
+  height: 100%;
+  transition-property: padding-top, padding-bottom;
+  transition-duration: 0.1s;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  width: 100%;
+  appearance: none;
+  font-size: 20px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  option {
+    padding: 5px 0;
+    height: 15px;
+  }
+}
+
+@media screen and(min-width: 850px) {
+  .input-location {
+    width: 30%;
+  }
+
+  .input-date-range {
+    width: auto;
+  }
+
+  .input-nr-people {
+    width: auto;
+  }
+
+  .submitButton {
+    width: auto;
+  }
+}
+
+@media screen and(min-width: 1024px) {
+  .input-location {
+    width: 100%;
+  }
+
+  .input-date-range {
+    width: auto;
+  }
+
+  .input-nr-people {
+    width: auto;
+  }
+
+  .submitButton {
+    width: auto;
+  }
+}
