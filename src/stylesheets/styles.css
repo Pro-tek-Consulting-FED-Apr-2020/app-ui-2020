@@ -106,3 +106,31 @@ li a {
 .navi-right ul li a i {
   padding: 0 10px;
 }
+
+/*---------- section2 ----------*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 25%;
+  padding: 0 35px 25px 35px;
+  text-align: center;
+  background: #f4f6f8;
+}
+
+.service-icon {
+  font-size: 32px;
+}
+
+.service-title {
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+}
+
+.service-cont {
+  color: #4f6f8f;
+}
