@@ -34,13 +34,59 @@ class HotelsSearchForm extends React.Component {
     </div>
   }
 
+  // sets the check in date
+  setCheckIn = (e) => {
+    let newCheckIn = e.target.value
+
+    if (newCheckIn > this.state.dateCheckOut) {
+      // changing checkout to checkin + 1
+      let newCheckOut = new Date(newCheckIn)
+      newCheckOut.setDate(newCheckOut.getDate() + 1)
+      newCheckOut = newCheckOut.toISOString().split('T')[0]
+
+      this.setState({ dateCheckIn: newCheckIn, dateCheckOut: newCheckOut })
+    } else {
+      this.setState({ dateCheckIn: newCheckIn })
+    }
+  }
+
+  // sets the check out date
+  setCheckOut = (e) => {
+    let newCheckOut = e.target.value
+
+    if(newCheckOut < this.state.dateCheckIn){
+      // changing checkin to checkout - 1
+      let newCheckIn = new Date(newCheckOut)
+      newCheckIn.setDate(newCheckIn.getDate() - 1)
+      newCheckIn = newCheckIn.toISOString().split('T')[0]
+
+      this.setState({ dateCheckIn: newCheckIn, dateCheckOut: newCheckOut })
+    } else{
+      this.setState({ dateCheckOut: newCheckOut })
+    }
+  }
+     
+
+
   renderDateRange() { // enter the date range
     return <div className="input-date-range">
       <label className="input-date-range-label"> Check-in - Check-out</label>
       <svg className="date-range-icon" viewBox="0 0 24 24" height="24" width="24" fill="currentcolor" color="blue" tabIndex="-1" focusable="false" aria-hidden="true" role="img"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path></svg>
-      <input className="dates1" type="date" min={today} max={this.state.dateCheckOut} onChange={(e) => this.setState({ dateCheckIn: e.target.value })} value={this.state.dateCheckIn}/>
+      <input 
+        className="dates1" 
+        type="date" 
+        min={today} 
+        onChange={this.setCheckIn} 
+        value={this.state.dateCheckIn}
+      />
       <span> - </span>
-      <input className="dates2" type="date"  min={this.state.dateCheckIn}  onChange={(e) => this.setState({ dateCheckOut: e.target.value })} value={this.state.dateCheckOut}/>
+      <input
+       className="dates2" 
+       type="date"  
+       min={tomorrow}  
+       onChange={this.setCheckOut} 
+       value={this.state.dateCheckOut}
+       />
     </div>
   }
 
