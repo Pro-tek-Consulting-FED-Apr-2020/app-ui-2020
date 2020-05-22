@@ -1,6 +1,10 @@
+// import React, { Component } from 'react';
+// import '../stylesheets/pricebreakers-styles.css' stylesheet not importing.
 
 class PriceBreakersModal extends React.Component {
-
+  constructor(props) {
+    super(props)
+  } 
 
 
 
@@ -26,3 +30,5 @@ class PriceBreakersModal extends React.Component {
     )
   }
 }
+
+// export default PriceBreakersModal;
