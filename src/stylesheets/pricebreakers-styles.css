@@ -1,7 +1,16 @@
+.new-tag {
+  color: red;
+}
+
 .pricebreakers-container {
   background-color: white;
 }
 
 .pricebreakers-header {
   font-size: 24px;
+}
+
+.pricebreaker-img1 {
+  max-width: 8%;
+  height: auto;
 }
