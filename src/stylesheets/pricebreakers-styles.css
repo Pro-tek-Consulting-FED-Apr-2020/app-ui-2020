@@ -94,5 +94,9 @@
   .pricebreakers-promo-wrapper {
     height: 250px;
   }
+
+  .pricebreakers-sizing {
+    flex-direction: row;
+  }
 }
 
