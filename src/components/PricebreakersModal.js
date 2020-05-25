@@ -20,13 +20,15 @@ class PriceBreakersModal extends React.Component {
       <div className='pricebreakers-section'>
         <div className='pricebreakers-container'>
           <div className='pricebreakers-box'>
-            <div className='new-tag'>New</div>
-              <div className='pricebreakers-header'>Introducing <span>Pricebreakers</span></div>
-            <button type='button' className='search-pricebreakers'>Search Pricebreakers</button>
-            <div className="three-pricebreaker-icon">
-              <img src='/images/pricebreakers-img1.png' className='img1' alt='hotel building icon'/>
-              <img src='/images/pricebreakers-img2.png' alt='hotel building icon with thumbs up'/>
-              <img src='/images/pricebreakers-img3.png' alt='door handle icon'/>
+            <div className='pricebreakers-promo-wrapper'>
+              <div className='new-tag'>New</div>
+                <div className='pricebreakers-header'>Introducing <span>Pricebreakers</span></div>
+              <button type='button' className='search-pricebreakers'>Search Pricebreakers</button>
+              <div className="three-pricebreaker-icon">
+                <img src='/images/pricebreakers-img1.png' className='img1' alt='hotel building icon'/>
+                <img src='/images/pricebreakers-img2.png' alt='hotel building icon with thumbs up'/>
+                <img src='/images/pricebreakers-img3.png' alt='door handle icon'/>
+              </div>
             </div>
           </div>
         </div>          
