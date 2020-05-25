@@ -70,9 +70,11 @@
 }
 
 .pricebreakers-sizing {
-  display: flex;
   flex-direction: column;
   height: 100%;
+}
+.pricebreakers-main-wrapper {
+  padding: 16px;
 }
 
 .pricebreakers-header {
@@ -96,6 +98,16 @@
 
   .pricebreakers-sizing {
     flex-direction: row;
+  }
+
+  .pricebreakers-main-wrapper {
+    flex: 1 1 66%;
+  }
+}
+
+@media screen and (min-width: 32em) {
+  .pricebreakers-main-wrapper {
+    flex: 1 1 50%;
   }
 }
 
