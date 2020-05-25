@@ -80,7 +80,7 @@
 }
 
 .pricebreakers-main-wrapper {
-  padding: 16px;
+  padding: 10px;
 }
 
 .pricebreakers-header {
@@ -89,13 +89,8 @@
   line-height: 1.4;
 }
 
-.three-pricebreaker-icon {
-
-};
-
-.img1 {
-  max-width: 10%;;
-  height: auto;
+span {
+  color: rgb(0, 122, 255);
 }
 
 /* MEDIA QUERIES: */
