@@ -24,16 +24,15 @@ class PriceBreakersModal extends React.Component {
               <div className='pricebreakers-sizing'>
                 <div className='new-tag'>New</div>
                   <div className='pricebreakers-main-wrapper'>
-                    <div className='price-breakers-header-flex'>
+                    <div className='pricebreakers-header-flex'>
                       <div className='pricebreakers-header'>Introducing <span>Pricebreakers</span></div>
-                    <button type='button' className='search-pricebreakers'>Search Pricebreakers</button>
-                    <div className="three-pricebreaker-icon">
+                        <button type='button' className='search-pricebreakers'>Search Pricebreakers</button>
+                    </div>
+                    <div className="icon-container">
                       <img src='/images/pricebreakers-img1.png' className='img1' alt='hotel building icon'/>
                       <img src='/images/pricebreakers-img2.png' alt='hotel building icon with thumbs up'/>
                       <img src='/images/pricebreakers-img3.png' alt='door handle icon'/>
                     </div>
-                    </div>
-
                     </div>
 
               </div>
