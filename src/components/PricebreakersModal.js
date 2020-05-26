@@ -29,7 +29,9 @@ class PriceBreakersModal extends React.Component {
                         <button type='button' className='search-pricebreakers'>Search Pricebreakers</button>
                     </div>
                     <div className="icon-container">
-                      <img src='/images/pricebreakers-img1.png' className='img1' alt='hotel building icon'/>
+                      <div className='img1-container'>
+                        <img src='/images/pricebreakers-img1.png' className='img1' alt='hotel building icon'/>
+                      </div>
                       <img src='/images/pricebreakers-img2.png' alt='hotel building icon with thumbs up'/>
                       <img src='/images/pricebreakers-img3.png' alt='door handle icon'/>
                     </div>
