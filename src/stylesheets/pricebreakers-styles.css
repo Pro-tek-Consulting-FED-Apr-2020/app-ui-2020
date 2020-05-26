@@ -120,7 +120,20 @@ span {
   min-height: 150px;
   margin-top: 16px;
   margin-bottom: 16px;
+  /* display: flex;
+  justify-content: space-between; */
   }
+
+.img1-container {
+  width: 50%;
+  text-align: center;
+  margin: 8px;
+}
+
+.img1 {
+  width: 30%;
+  height: auto;
+}
 
 /* MEDIA QUERIES: */
 @media screen and (min-width: 64em) {
