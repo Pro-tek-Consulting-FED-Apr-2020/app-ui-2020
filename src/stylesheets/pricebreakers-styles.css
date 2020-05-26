@@ -75,6 +75,7 @@
 }
 
 .pricebreakers-header-flex {
+  display: flex;
   justify-content: space-between;
   flex: 1 1 auto;
 }
@@ -92,6 +93,34 @@
 span {
   color: rgb(0, 122, 255);
 }
+
+.search-pricebreakers {
+  font-size: 10px;
+  line-height: 22px;
+  height: 30px;
+  width: 155px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgb(0, 122, 255);
+  color: white;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-style: solid;
+  padding: 3px 10px;
+  align-items: flex-start;
+}
+
+.icon-container {
+  min-height: 150px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  }
 
 /* MEDIA QUERIES: */
 @media screen and (min-width: 64em) {
