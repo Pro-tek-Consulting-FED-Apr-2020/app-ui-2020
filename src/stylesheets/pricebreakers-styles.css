@@ -118,20 +118,37 @@ span {
 
 .icon-container {
   min-height: 150px;
-  margin-top: 16px;
+  margin-top: 10px;
   margin-bottom: 16px;
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   }
 
 .img1-container {
-  width: 50%;
+  max-width: 30%;
   text-align: center;
   margin: 8px;
 }
 
 .img1 {
+  width: 45%;
+  height: auto;
+}
+
+.caption-img1 {
+  margin-top: 2px;
+  font-size: 9px;
+  padding-bottom: 3px;
+}
+
+.img2-container {
   width: 30%;
+  text-align: center;
+  margin: 8px;
+}
+
+.img2 {
+  width: 75%;
   height: auto;
 }
 
