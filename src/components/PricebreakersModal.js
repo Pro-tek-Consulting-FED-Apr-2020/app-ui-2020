@@ -31,11 +31,11 @@ class PriceBreakersModal extends React.Component {
                     <div className="icon-container">
                       <div className='img1-container'>
                         <img src='/images/pricebreakers-img1.png' className='img1' alt='hotel building icon'/>
-                          <div className='caption-img1'>See 3 popular hotels at a heavily discounted price</div>
+                        <div className='caption-img1'>See 3 popular hotels at a heavily discounted price</div>
                       </div>
                         <div className="img2-container">
                           <img src='/images/pricebreakers-img2.png' className="img2" alt='hotel building icon with thumbs up'/>
-
+                          <div className="caption-img2">Click choose and we'll pick one of the 3 hotels</div>
                         </div>
                       <img src='/images/pricebreakers-img3.png' alt='door handle icon'/>
                     </div>
