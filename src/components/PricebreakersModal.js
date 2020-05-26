@@ -5,15 +5,15 @@ class PriceBreakersModal extends React.Component {
   constructor(props) {
     super(props)
   } 
-  state = { show: false};
+  // state = { show: false};
 
-  showModal = () => {
-    this.setState({ show: true});
-  };
+  // showModal = () => {
+  //   this.setState({ show: true});
+  // };
 
-  hideModal = () => {
-    this.setState({show: false});
-  };
+  // hideModal = () => {
+  //   this.setState({show: false});
+  // };
 
   render() {
     return(
@@ -37,7 +37,10 @@ class PriceBreakersModal extends React.Component {
                           <img src='/images/pricebreakers-img2.png' className="img2" alt='hotel building icon with thumbs up'/>
                           <div className="caption-img2">Click choose and we'll pick one of the 3 hotels</div>
                         </div>
-                      <img src='/images/pricebreakers-img3.png' alt='door handle icon'/>
+                        <div className='img3-container'>
+                          <img src='/images/pricebreakers-img3.png' className='img3' alt='door handle icon'/>
+                          <div className='caption-img3'>See which hotel right after you book!</div>
+                        </div>
                     </div>
                     </div>
 

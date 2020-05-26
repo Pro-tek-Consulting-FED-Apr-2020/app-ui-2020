@@ -148,10 +148,33 @@ span {
 }
 
 .img2 {
-  width: 75%;
+  width: 54%;
   height: auto;
 }
 
+.caption-img2 {
+  width: 102%;
+  font-size: 9px;
+  padding-bottom: 3px;
+}
+
+.img3-container {
+  width: 30%;
+  text-align: center;
+  margin: 8px;
+}
+
+.img3 {
+  width: 53%;
+  height: auto;
+}
+
+.caption-img3 {
+  width: 98%;
+  font-size: 9px;
+  padding-bottom: 3px;
+}
+ 
 /* MEDIA QUERIES: */
 @media screen and (min-width: 64em) {
   .pricebreakers-promo-wrapper {
