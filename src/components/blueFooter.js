@@ -1,11 +1,13 @@
 const images = [
-    require('./../images/priceline.svg'),
-    require('./../images/booking.svg'),
-    require('./../images/kayak.svg'),
-    require('./../images/agoda.svg'),
-    require('./../images/rentalcars.svg'),
-    require('./../images/opentable.svg'),
+    './../images/priceline.svg',
+    './../images/booking.svg',
+    './../images/kayak.svg',
+    './../images/agoda.svg',
+    './../images/rentalcars.svg',
+    './../images/opentable.svg'
 ]
+
+
 
 
 class BlueFooter extends React.Component {
@@ -16,7 +18,6 @@ class BlueFooter extends React.Component {
         return (
             <div className='blue-footer' >
                 <p>Priceline is part of Booking Holdings, the world leader in online travel and related services.</p>
-                {/* <img src='./../images/priceline.svg' alt='' /> */}
                 {imageList}
             </div >
         );
