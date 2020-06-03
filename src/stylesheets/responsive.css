@@ -78,8 +78,14 @@
     .navi-left.responsive ul li a:hover {
         background: #eee;
     }
-    .service {
+    .service, .footer-flex {
         display: none;
+    }
+    #footer {
+        min-height: auto;
+    }
+    .blue-footer p {
+        font-size: 12px;
     }
 }
 
@@ -91,6 +97,9 @@
     }
     .sale2 {
         display: none;
+    }
+    .blue-footer p {
+        font-size: 11px;
     }
 }
 

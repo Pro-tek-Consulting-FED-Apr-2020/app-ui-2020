@@ -13,7 +13,7 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
 }
 
 .float-left {
@@ -99,7 +99,7 @@ a {
 li a {
   display: inline-block;
   padding: 7px 20px;
-  color: #007AFF;
+  color: #007aff;
   font-weight: 100;
 }
 
@@ -123,6 +123,7 @@ li a {
 
 .service-icon {
   font-size: 32px;
+  color: #007aff;
 }
 
 .service-title {
@@ -133,4 +134,68 @@ li a {
 
 .service-cont {
   color: #4f6f8f;
+}
+
+/*---------------------------------Footer -----------------------------------------------------------*/
+
+.footerbg {
+  background: #f3f3f3;
+  padding: 35px;
+}
+
+footer {
+  width: 100%;
+  min-height: 250px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footerInner {
+  flex: 24%;
+  padding: 0 1% 2% 1%;
+}
+
+.footertitle {
+  font-weight: 700;
+  color: #000;
+}
+
+.listNavigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listNavigation ul li a {
+  color: #001832;
+  line-height: 1.4em;
+  font-weight: 500;
+  padding: 7px 0;
+}
+
+footer p {
+  color: #596b7d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.bluebg {
+  background: #001832;
+  text-align: center;
+  padding: 35px;
+  width: 100%;
+}
+
+.blue-footer p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+.blue-footer img {
+  padding: 1%;
 }
