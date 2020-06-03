@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Priceline</title>
     <meta name="description" content="Movies Resource" />
-    <meta name="viewport" content="width=device-width, initial-sclae=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--------css---------->
     <link href="./stylesheets/styles.css" rel="stylesheet" />
     <link href="./stylesheets/responsive.css" rel="stylesheet" />
@@ -31,6 +31,13 @@
     />
     <script src="./components/SearchBox.js" type="text/babel"></script>
     <script src="./components/HotelsSearchForm.js" type="text/babel"></script>
+
+    <!--footer components-->
+
+    <script src="./components/footer.js" type="text/babel"></script>
+    <script src="./components/footerNavigaton.js" type="text/babel"></script>
+    <script src="./components/blueFooter.js" type="text/babel"></script>
+    <!-- <script src="./components/errorBoundry.js" type="text/babel"></script> -->
   </head>
 
   <body>
@@ -147,10 +154,20 @@
       </section>
       <!---------Service section2 end------>
     </main>
-    <footer></footer>
+    <!-----------Footer start -------------->
+
+    <section class="footerbg">
+      <footer id="footer"></footer>
+    </section>
+    <section class="bluebg">
+      <div id="footer-blue"></div>
+    </section>
+    <!-----------Footer end -------------->
 
     <script type="text/babel">
       ReactDOM.render(<SearchBox />, document.getElementById("searchBox"));
+      ReactDOM.render(<Footer />, document.getElementById("footer"));
+      ReactDOM.render(<BlueFooter />, document.getElementById("footer-blue"));
     </script>
     <!---------Navigation toggle script-------->
     <script>
