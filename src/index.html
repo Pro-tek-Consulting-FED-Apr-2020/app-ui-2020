@@ -38,6 +38,19 @@
     <script src="./components/footerNavigaton.js" type="text/babel"></script>
     <script src="./components/blueFooter.js" type="text/babel"></script>
     <!-- <script src="./components/errorBoundry.js" type="text/babel"></script> -->
+     <!--Achu components-->
+    <script src="./components/SignInModal.js" type="text/babel"></script>
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+    <link
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
   </head>
 
   <body>
@@ -73,9 +86,7 @@
         <div class="navi-right float-right">
           <ul>
             <li>
-              <a href="#"
-                ><i class="fa fa-user-circle"></i><span>Sign in</span></a
-              >
+               <div id="root"></div>
             </li>
             <li>
               <a href="#"
@@ -168,6 +179,10 @@
       ReactDOM.render(<SearchBox />, document.getElementById("searchBox"));
       ReactDOM.render(<Footer />, document.getElementById("footer"));
       ReactDOM.render(<BlueFooter />, document.getElementById("footer-blue"));
+    </script>
+    <!--Sign In Modal-->
+     <script type="text/babel">
+      ReactDOM.render(<SignInModal />, document.getElementById("root"));
     </script>
     <!---------Navigation toggle script-------->
     <script>
