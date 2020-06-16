@@ -38,6 +38,19 @@
     <script src="./components/footerNavigaton.js" type="text/babel"></script>
     <script src="./components/blueFooter.js" type="text/babel"></script>
     <!-- <script src="./components/errorBoundry.js" type="text/babel"></script> -->
+     <!--Achu components-->
+    <script src="./components/SignInModal.js" type="text/babel"></script>
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+    <link
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
   </head>
 
   <body>
@@ -73,22 +86,36 @@
         <div class="navi-right float-right">
           <ul>
             <li>
-              <a href="#"
-                ><i class="fa fa-user-circle"></i><span>Sign in</span></a
-              >
+               <div id="root"></div>
             </li>
             <li>
-              <a href="#"
-                ><i class="fa fa-briefcase"></i><span>My Trip</span>
-                <i class="fa fa-caret-down"></i
-              ></a>
-            </li>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myDropdown1()">
+                <i class="fa fa-briefcase"></i> Find My Trip
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Find My Trip</a><hr style="color: blue;"/>
+                <a href="#">View, Print or Email Your Itinerary</a>
+              </div>
+            </div>
+          </li>
+
             <li>
-              <a href="#"
-                ><i class="fa fa-question-circle"></i><span>Help</span>
-                <i class="fa fa-caret-down"></i
-              ></a>
+              <div class="dropdowna">
+              <button class="dropbtna" onclick="myDropdowna()" style="right: 33px;">
+                <i class="fa fa-question-circle"></i>Help
+                <i class="fa fa-caret-down"></i >
+              </button>
+              <div class="dropdown-content" id="myDropdowna">
+                <a href="#">Frequently Asked Questions</a><hr style="color: blue;"/>
+                <a href="#">Find Your Request Number</a><hr style="color: blue;"/>
+                <a href="#">Profile Password Help</a><hr style="color: blue;"/>
+                <a href="#">Contact Us</a>
+              </div>
+            </div>
             </li>
+
           </ul>
         </div>
       </div>
@@ -169,6 +196,10 @@
       ReactDOM.render(<Footer />, document.getElementById("footer"));
       ReactDOM.render(<BlueFooter />, document.getElementById("footer-blue"));
     </script>
+    <!--Sign In Modal-->
+     <script type="text/babel">
+      ReactDOM.render(<SignInModal />, document.getElementById("root"));
+    </script>
     <!---------Navigation toggle script-------->
     <script>
       function myFunction() {
@@ -180,5 +211,33 @@
         }
       }
     </script>
+    <!---------------Dropdown script--------------->
+    <script>
+   function myDropdown1() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+  if (!e.target.matches('.dropbtna')) {
+  var myDropdown = document.getElementById("myDropdowna");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+function myDropdowna() {
+  document.getElementById("myDropdowna").classList.toggle("show");
+}
+
+
+
+      
+      </script>
   </body>
 </html>
