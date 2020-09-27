@@ -3,6 +3,25 @@ class PriceBreakersModal extends React.Component {
     super(props)
   } 
 
+  state = { show: false };
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
+
+  //modal rendering here
+  renderPriceBreakerModal() {
+    return (
+      <main>
+        <h1>PriceBreakers Modal</h1>
+      </main>
+    )
+  };
+
   render() {
     return(
       <div className='pricebreakers-section'>
@@ -14,7 +33,7 @@ class PriceBreakersModal extends React.Component {
                   <div className='pricebreakers-main-wrapper'>
                     <div className='pricebreakers-header-flex'>
                       <div className='pricebreakers-header'>Introducing <span>Pricebreakers</span></div>
-                        <button type='button' className='search-pricebreakers'>Search Pricebreakers</button>
+                        <button type='button' className='search-pricebreakers' onClick={this.showModal}>Search Pricebreakers</button>
                     </div>
                     <div className="icon-container">
                       <div className='img1-container'>
